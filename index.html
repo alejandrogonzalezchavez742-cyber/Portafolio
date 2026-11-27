@@ -1,106 +1,80 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio profesional | Alejandro González Chávez</title>
+    <meta name="description" content="Sitios web, automatización de procesos e implementación de inteligencia artificial para negocios. Cuéntame qué quieres mejorar y diseñamos una solución a tu medida.">
+    <meta name="theme-color" content="#10130f">
+    <title>Web e IA para tu negocio | Alejandro González Chávez</title>
     <link rel="stylesheet" href="./css/style-portafolio.css">
 </head>
-
-<body>
-    <header class="header">
+<body class="home-page">
+    <header class="header home-header">
         <div class="header-container">
-            <a class="brand" href="index.html">Alejandro G.</a>
-            <nav class="header-menu">
-                <a class="header-menu-link" href="index.html">Inicio</a>
+            <a class="brand" href="index.html" aria-label="Alejandro González, inicio"><span class="brand-mark">AG</span><span class="brand-name">Alejandro González</span></a>
+            <nav class="header-menu" aria-label="Navegación principal">
+                <a class="header-menu-link" href="#servicios">Servicios</a>
+                <a class="header-menu-link" href="#proyectos">Proyectos</a>
                 <a class="header-menu-link" href="about.html">Sobre mí</a>
-                <a class="header-menu-link" href="proyectos.html">Proyectos</a>
-                <a class="header-menu-link" href="certificados.html">Certificados</a>
-                <a class="header-menu-link" href="#contacto">Contacto</a>
+                <a class="header-cta" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-texto">
-                <span class="hero-rol">Desarrollador Full Stack & Diseñador UX</span>
-                <h1>Creo experiencias digitales modernas y <strong>resonantes</strong>.</h1>
-                <p>Hola, soy Alejandro González Chávez. Combino diseño, desarrollo front-end y back-end para entregar sitios web y aplicaciones móviles con alto impacto visual y usabilidad. Escríbeme a <a href="mailto:a17jul@gmail.com">a17jul@gmail.com</a>.</p>
-                <div class="hero-botones">
-                    <a class="boton boton-principal" href="https://wa.me/3531279557">Enviar WhatsApp</a>
-                    
-                    <a class="boton boton-secundario" href="https://www.linkedin.com/in/alejandro-gonzalez-chavez" target="_blank" rel="noreferrer">Ver LinkedIn</a>
+    <main class="home-main">
+        <section class="sales-hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Desarrollo web · Automatización · IA aplicada</p>
+                <h1 id="hero-title">Haz que tu negocio avance <span>con tecnología que sí te sirve.</span></h1>
+                <p class="hero-lede">Creo sitios web y soluciones con inteligencia artificial para ayudarte a atender mejor, reducir tareas repetitivas y convertir ideas en herramientas útiles.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="https://wa.me/3531279557">Cuéntame tu proyecto <span aria-hidden="true">↗</span></a>
+                    <a class="button button-quiet" href="#servicios">Conoce los servicios <span aria-hidden="true">↓</span></a>
                 </div>
-                <div class="hero-destacados">
-                    <div>
-                        <strong>+5</strong>
-                        <span>Proyectos completados</span>
-                    </div>
-                    <div>
-                        <strong>UX/UI</strong>
-                        <span>Enfoque centrado en el usuario</span>
-                    </div>
-                    <div>
-                        <strong>React</strong>
-                        <span>Interfaces rápidas y responsivas</span>
-                    </div>
-                </div>
+                <div class="hero-note"><span class="note-line" aria-hidden="true"></span><span>Soluciones a la medida, explicadas sin tecnicismos.</span></div>
             </div>
-            <div class="hero-imagen">
-                <img src="./img/animate.png" alt="Ilustración de desarrollo web moderno">
+
+            <div class="hero-visual" aria-label="Ilustración de un flujo de trabajo digital conectado">
+                <div class="visual-orbit orbit-one"></div>
+                <div class="visual-orbit orbit-two"></div>
+                <div class="visual-topline"><span>UN FLUJO MÁS SIMPLE</span><span class="visual-live"><i></i> DISEÑADO PARA TI</span></div>
+                <div class="flow-card flow-trigger"><span class="flow-icon icon-inbox" aria-hidden="true">↘</span><span><small>ENTRADA</small><strong>Una nueva consulta</strong></span><span class="flow-check" aria-hidden="true">✓</span></div>
+                <div class="flow-connector" aria-hidden="true"><span></span></div>
+                <div class="flow-card flow-ai"><span class="flow-icon icon-spark" aria-hidden="true">✳</span><span><small>IA + AUTOMATIZACIÓN</small><strong>Clasifica y prepara respuesta</strong></span><span class="flow-arrow" aria-hidden="true">↗</span></div>
+                <div class="flow-connector connector-split" aria-hidden="true"><span></span></div>
+                <div class="flow-outcomes"><div class="flow-card flow-result"><span class="result-dot" aria-hidden="true"></span><span><small>RESULTADO</small><strong>Seguimiento ordenado</strong></span></div><div class="human-chip"><span aria-hidden="true">⌘</span> Tú decides</div></div>
+                <p class="visual-caption">La tecnología se adapta a tu proceso. No al revés.</p>
+                <span class="visual-star star-a" aria-hidden="true">✳</span><span class="visual-star star-b" aria-hidden="true">✳</span>
+            </div>
+            <div class="hero-bottom"><span>DE LA IDEA AL SIGUIENTE PASO</span><span>WEB <b>·</b> IA <b>·</b> AUTOMATIZACIÓN</span></div>
+        </section>
+
+        <section class="services-section" id="servicios" aria-labelledby="services-title">
+            <div class="section-intro"><p class="eyebrow">Lo que puedo construir contigo</p><h2 id="services-title">Menos trabajo repetido.<br><span>Más espacio para crecer.</span></h2><p>Elijo la herramienta según el problema: a veces basta una web clara; otras, conviene automatizar o integrar IA.</p></div>
+            <div class="service-grid">
+                <article class="service-card service-featured"><div class="service-card-top"><span class="service-number">01 / PRESENCIA</span><span class="service-symbol" aria-hidden="true">↗</span></div><h3>Diseño y desarrollo web</h3><p>Sitios y páginas de aterrizaje rápidos, adaptables y preparados para que tus clientes encuentren lo que buscan y sepan qué hacer después.</p><ul><li>Sitios de servicios y portafolios</li><li>Landing pages para campañas</li><li>Mejoras a una web existente</li></ul><a href="#contacto" class="text-link">Platiquemos de tu sitio <span aria-hidden="true">→</span></a></article>
+                <article class="service-card"><div class="service-card-top"><span class="service-number">02 / OPERACIÓN</span><span class="service-symbol" aria-hidden="true">⌁</span></div><h3>Automatización de procesos</h3><p>Conecto tareas que hoy haces a mano para que la información llegue al lugar correcto y el seguimiento no dependa de recordarlo todo.</p><ul><li>Captura y organización de solicitudes</li><li>Notificaciones y seguimiento</li><li>Integración entre herramientas</li></ul><a href="#contacto" class="text-link">Detectemos qué automatizar <span aria-hidden="true">→</span></a></article>
+                <article class="service-card"><div class="service-card-top"><span class="service-number">03 / INTELIGENCIA</span><span class="service-symbol service-spark" aria-hidden="true">✳</span></div><h3>Implementaciones con IA</h3><p>Incorporo IA en tareas concretas de tu operación, con límites claros y revisión humana donde importa.</p><ul><li>Asistentes para preguntas frecuentes</li><li>Clasificación y resumen de información</li><li>Búsqueda en documentos y contenidos</li></ul><a href="#contacto" class="text-link">Exploramos un caso de uso <span aria-hidden="true">→</span></a></article>
+            </div>
+            <p class="service-footnote"><span aria-hidden="true">✳</span> Cada proyecto comienza entendiendo el proceso y los datos disponibles. La IA se incorpora cuando realmente aporta valor.</p>
+        </section>
+
+        <section class="work-section" id="proyectos" aria-labelledby="work-title">
+            <div class="work-heading"><div><p class="eyebrow">Trabajo y práctica</p><h2 id="work-title">Ideas convertidas<br>en experiencias digitales.</h2></div><a class="text-link work-all" href="proyectos.html">Ver todos los proyectos <span aria-hidden="true">↗</span></a></div>
+            <div class="work-grid">
+                <a class="work-card work-culturama" href="Proyectos/Culturama/index.html"><div class="work-image"><img src="./img/culturama.png" alt="Vista previa del proyecto Culturama" loading="lazy"><span class="work-open" aria-hidden="true">↗</span></div><div class="work-meta"><div><span class="work-type">DISEÑO WEB · RESPONSIVE</span><h3>Culturama</h3></div><span class="work-year">01</span></div></a>
+                <a class="work-card work-focus" href="Proyectos/Pro_Fokus/index.html"><div class="work-image"><img src="./img/Proyectos/Proyecto_Fokus.png" alt="Vista previa de la aplicación Fokus" loading="lazy"><span class="work-open" aria-hidden="true">↗</span></div><div class="work-meta"><div><span class="work-type">PRODUCTIVIDAD · FRONT-END</span><h3>Fokus</h3></div><span class="work-year">02</span></div></a>
+                <a class="work-card work-video" href="Proyectos/Pro_video/video.html"><div class="work-image"><img src="./img/Proyectos/Proyecto_Wolf_play.png" alt="Vista previa de la interfaz Wolf Play" loading="lazy"><span class="work-open" aria-hidden="true">↗</span></div><div class="work-meta"><div><span class="work-type">INTERFAZ · EXPERIENCIA DIGITAL</span><h3>Wolf Play</h3></div><span class="work-year">03</span></div></a>
             </div>
         </section>
 
-        <section class="servicios">
-            <h2>Qué hago</h2>
-            <p>Desarrollo soluciones digitales que funcionan bien en todas las pantallas y ayudan a las marcas a crecer.</p>
-            <div class="servicios-grid">
-                <article class="servicio-card">
-                    <h3>Desarrollo Web</h3>
-                    <p>Construyo sitios y apps con HTML, CSS, JavaScript, React y APIs confiables.</p>
-                </article>
-                <article class="servicio-card">
-                    <h3>Diseño UX/UI</h3>
-                    <p>Creo interfaces limpias y accesibles que ofrecen experiencias memorables.</p>
-                </article>
-                <article class="servicio-card">
-                    <h3>Aplicaciones móviles</h3>
-                    <p>Desarrollo apps responsivas y adaptables para clientes que necesitan movilidad.</p>
-                </article>
-            </div>
+        <section class="approach-section" aria-labelledby="approach-title">
+            <div class="approach-head"><p class="eyebrow">Cómo trabajamos</p><h2 id="approach-title">Claro desde la primera conversación.</h2><p>Avanzamos por etapas, con decisiones visibles y objetivos compartidos.</p></div>
+            <div class="steps-grid"><article class="step-card"><span class="step-index">01</span><h3>Entendemos</h3><p>Revisamos tu objetivo, cómo trabajas hoy y qué te gustaría mejorar.</p></article><article class="step-card"><span class="step-index">02</span><h3>Proponemos</h3><p>Defino un alcance y una solución concreta. Sabes qué incluye antes de empezar.</p></article><article class="step-card"><span class="step-index">03</span><h3>Construimos</h3><p>Desarrollo, revisamos juntos y te entrego una solución lista para usar.</p></article></div>
         </section>
 
-        <section class="acerca" id="acerca">
-            <div>
-                <h2>Sobre mí</h2>
-                <p>Soy un profesional orientado al detalle, con pasión por entregar proyectos bien estructurados, rendimiento óptimo y una experiencia de usuario clara. Trabajo con tecnologías modernas y siempre busco soluciones creativas para retos digitales.</p>
-                <ul>
-                    <li>Desarrollo Web Full Stack</li>
-                    <li>Diseño de interfaces y prototipos</li>
-                    <li>Integración de APIs y bases de datos</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="contacto" id="contacto">
-            <div class="contacto-card">
-                <h2>Contacto</h2>
-                <p>Estoy disponible para nuevos proyectos y colaboraciones. Escríbeme por correo, WhatsApp o LinkedIn y conversemos tu idea.</p>
-                <div class="contacto-enlaces">
-                    <a class="contacto-linea" href="mailto:a17jul@gmail.com">Email: a17jul@gmail.com</a>
-                    <a class="contacto-linea" href="https://wa.me/3531279557">WhatsApp: +353 127 9557</a>
-                    <a class="contacto-linea" href="https://www.linkedin.com/in/alejandro-gonzalez-chavez" target="_blank" rel="noreferrer">LinkedIn</a>
-                </div>
-            </div>
-        </section>
-        <img class="imagen-principal" src="./img/animate1.png" alt="Imagen de Portafolio">
+        <section class="contact-section" id="contacto" aria-labelledby="contact-title"><div class="contact-orb" aria-hidden="true"></div><div class="contact-copy"><p class="eyebrow">Tu siguiente paso</p><h2 id="contact-title">¿Qué te gustaría<br><span>hacer más sencillo?</span></h2><p>Cuéntame cómo funciona hoy y qué quieres conseguir. Exploramos una solución clara para tu negocio.</p></div><div class="contact-actions"><a class="button button-light" href="https://wa.me/3531279557">Escríbeme por WhatsApp <span aria-hidden="true">↗</span></a><a class="contact-email" href="mailto:a17jul@gmail.com">o envíame un correo a a17jul@gmail.com</a></div><div class="contact-index" aria-hidden="true">AG<span>·</span>2026</div></section>
     </main>
-
-    <footer class="footer">
-        <p>Portafolio profesional de Alejandro González Chávez</p>
-    </footer>
+    <footer class="home-footer"><a class="footer-brand" href="index.html">Alejandro González Chávez</a><span>Desarrollo web e IA aplicada</span><nav aria-label="Enlaces del pie de página"><a href="about.html">Sobre mí</a><a href="certificados.html">Certificados</a><a href="proyectos.html">Proyectos</a></nav><span class="footer-copy">© 2026</span></footer>
 </body>
-
 </html>
