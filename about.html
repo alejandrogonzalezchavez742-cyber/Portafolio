@@ -1,42 +1,62 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce a Alejandro González Chávez, desarrollador Full Stack con enfoque en desarrollo web, UX/UI e integración de soluciones digitales.">
+    <meta name="theme-color" content="#141711">
     <title>Sobre mí | Alejandro González Chávez</title>
     <link rel="stylesheet" href="./css/style-portafolio.css">
 </head>
-
-<body>
-    <header class="header">
+<body class="home-page about-page">
+    <header class="header home-header">
         <div class="header-container">
-            <a class="brand" href="index.html">Alejandro G.</a>
-            <nav class="header-menu">
-                <a class="header-menu-link" href="index.html">Inicio</a>
-                <a class="header-menu-link" href="certificados.html">Certificados</a>
-                <a class="header-menu-link" href="about.html">Sobre mí</a>
-                <a class="header-menu-link" href="index.html#contacto">Contacto</a>
+            <a class="brand" href="index.html" aria-label="Alejandro González, inicio"><span class="brand-mark">AG</span><span class="brand-name">Alejandro González</span></a>
+            <nav class="header-menu" aria-label="Navegación principal">
+                <a class="header-menu-link" href="index.html#servicios">Servicios</a>
+                <a class="header-menu-link" href="index.html#proyectos">Proyectos</a>
+                <a class="header-menu-link about-current" href="about.html" aria-current="page">Sobre mí</a>
+                <a class="header-cta" href="index.html#contacto">Hablemos <span aria-hidden="true">↗</span></a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="acerca">
-            <h2>Sobre mí</h2>
-            <p>Soy Alejandro González Chávez, desarrollador Full Stack con experiencia en proyectos web y aplicaciones móviles. Mi enfoque está en ofrecer soluciones elegantes, escalables y pensadas en la experiencia del usuario.</p>
-            <p>Trabajo con tecnologías modernas para construir sitios rápidos, seguros y fáciles de usar. Me encanta colaborar con equipos creativos y resolver problemas reales con diseño y código.</p>
-            <ul>
-                <li>Desarrollo Front-End y Back-End</li>
-                <li>Diseño UX/UI enfocado en conversión</li>
-                <li>Integración de APIs y automatización</li>
-            </ul>
+    <main class="about-main">
+        <section class="about-hero" aria-labelledby="about-title">
+            <div class="about-copy">
+                <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Sobre mí · Desarrollo Full Stack</p>
+                <h1 id="about-title">Diseño y desarrollo tecnología <span>con sentido.</span></h1>
+                <p class="about-lede">Soy Alejandro González Chávez, desarrollador Full Stack. He trabajado en proyectos web y aplicaciones móviles, con atención al diseño, la experiencia de usuario y los detalles que hacen que una solución sea fácil de usar.</p>
+                <p class="about-support">Me gusta entender primero el problema y después elegir cómo resolverlo. Así construyo experiencias digitales útiles, claras y adaptadas a cada proyecto.</p>
+                <div class="about-actions">
+                    <a class="button button-primary" href="index.html#contacto">Hablemos de tu proyecto <span aria-hidden="true">↗</span></a>
+                    <a class="button button-quiet" href="index.html#servicios">Ver servicios <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+            <aside class="about-profile" aria-label="Áreas de trabajo">
+                <div class="profile-top"><span>PERFIL</span><span>AG / 01</span></div>
+                <div class="profile-monogram" aria-hidden="true">AG<span>✳</span></div>
+                <p class="profile-name">Alejandro González Chávez</p>
+                <p class="profile-role">Desarrollador Full Stack</p>
+                <div class="profile-divider"></div>
+                <p class="profile-label">ÁREAS DE TRABAJO</p>
+                <ul class="profile-tags"><li>Desarrollo web</li><li>UX / UI</li><li>Integración de APIs</li><li>Automatización</li></ul>
+                <p class="profile-note"><span aria-hidden="true">↗</span> Tecnología enfocada en resolver necesidades reales.</p>
+            </aside>
+            <div class="about-bottom"><span>DISEÑO <b>·</b> DESARROLLO <b>·</b> EXPERIENCIA</span><a href="proyectos.html">Explora mi trabajo <span aria-hidden="true">↗</span></a></div>
         </section>
+
+        <section class="about-principles" aria-labelledby="principles-title">
+            <div class="principles-intro"><p class="eyebrow">Mi forma de trabajar</p><h2 id="principles-title">Buenas soluciones empiezan <span>con buenas preguntas.</span></h2><p>Una herramienta funciona mejor cuando responde a una necesidad concreta y las personas pueden usarla con confianza.</p></div>
+            <div class="principles-list">
+                <article class="principle"><span class="principle-index">01</span><div><h3>Entender antes de construir</h3><p>Conozco el objetivo, el contexto y las personas que usarán la solución.</p></div></article>
+                <article class="principle"><span class="principle-index">02</span><div><h3>Diseñar para las personas</h3><p>Organizo la información y los flujos para que cada paso sea claro.</p></div></article>
+                <article class="principle"><span class="principle-index">03</span><div><h3>Elegir la tecnología adecuada</h3><p>Desde una web hasta una automatización o un caso de IA, priorizo lo que aporta valor al proyecto.</p></div></article>
+            </div>
+        </section>
+
+        <section class="about-contact"><div><p class="eyebrow">¿Tienes una idea?</p><h2>Construyamos el siguiente paso.</h2></div><a class="button button-light" href="index.html#contacto">Cuéntame qué necesitas <span aria-hidden="true">↗</span></a></section>
     </main>
-
-    <footer class="footer">
-        <p>Portafolio profesional de Alejandro González Chávez</p>
-    </footer>
+    <footer class="home-footer"><a class="footer-brand" href="index.html">Alejandro González Chávez</a><span>Desarrollo web e IA aplicada</span><nav aria-label="Enlaces del pie de página"><a href="certificados.html">Certificados</a><a href="proyectos.html">Proyectos</a><a href="index.html#contacto">Contacto</a></nav><span class="footer-copy">© 2026</span></footer>
 </body>
-
 </html>
