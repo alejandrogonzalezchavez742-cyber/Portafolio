@@ -81,14 +81,24 @@
                 <p>Cuéntame cómo funciona hoy y qué quieres conseguir. Exploramos una solución clara para tu negocio.</p>
             </div>
             <div class="contact-methods" aria-label="Otras formas de contacto">
-                <a class="contact-method" href="mailto:a17jul@gmail.com">
+                <div class="contact-method">
                     <span class="contact-method-label">CORREO ELECTRÓNICO</span>
-                    <strong>a17jul@gmail.com</strong>
-                    <span class="contact-method-action">Escríbeme por correo <span aria-hidden="true">↗</span></span>
-                </a>
+                    <div class="contact-value-row">
+                        <a class="contact-value" href="mailto:a17jul@gmail.com">a17jul@gmail.com</a>
+                        <button class="copy-button" type="button" data-copy="a17jul@gmail.com" data-copy-label="correo" aria-label="Copiar correo" title="Copiar correo">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"></rect><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"></path></svg>
+                        </button>
+                    </div>
+                    <a class="contact-method-action" href="mailto:a17jul@gmail.com">Escríbeme por correo <span aria-hidden="true">↗</span></a>
+                </div>
                 <div class="contact-method">
                     <span class="contact-method-label">TELÉFONO / WHATSAPP</span>
-                    <a class="contact-number" href="tel:+3531279557">+353 127 9557</a>
+                    <div class="contact-value-row">
+                        <a class="contact-number" href="tel:+3531279557">+353 127 9557</a>
+                        <button class="copy-button" type="button" data-copy="+353 127 9557" data-copy-label="teléfono" aria-label="Copiar teléfono" title="Copiar teléfono">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"></rect><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"></path></svg>
+                        </button>
+                    </div>
                     <a class="contact-method-action" href="https://wa.me/3531279557">Abrir WhatsApp <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
@@ -112,5 +122,6 @@
         </section>
     </main>
     <footer class="home-footer"><a class="footer-brand" href="index.html">Alejandro González Chávez</a><span>Desarrollo web e IA aplicada</span><nav aria-label="Enlaces del pie de página"><a href="about.html">Sobre mí</a><a href="certificados.html">Certificados</a><a href="proyectos.html">Proyectos</a></nav><span class="footer-copy">© 2026</span></footer>
+    <script src="./js/contact-copy.js" defer></script>
 </body>
 </html>
