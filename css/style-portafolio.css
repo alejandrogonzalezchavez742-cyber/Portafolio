@@ -813,3 +813,27 @@ main {
 @media (prefers-reduced-motion: reduce) {
     .home-page *, .home-page *::before, .home-page *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* Ajustes de ritmo del hero y el diagrama */
+.sales-hero { padding-top: 52px; }
+.hero-copy h1 { font-size: clamp(3rem, 5vw, 5.4rem); }
+.hero-visual { min-height: 500px; }
+.flow-trigger { margin-top: 30px; }
+.flow-connector { height: 32px; }
+.flow-connector span { margin-top: 26px; }
+.flow-outcomes { gap: 12px; margin-left: 66px; }
+.flow-result { min-height: 64px; }
+.visual-caption { bottom: 17px; }
+@media (max-width: 700px) {
+    .sales-hero { padding-top: 58px; }
+    .hero-copy h1 { font-size: clamp(2.9rem, 10vw, 4.4rem); }
+    .hero-visual { min-height: 400px; }
+    .flow-outcomes { gap: 8px; margin-left: 44px; }
+}
+@media (max-width: 380px) {
+    .hero-visual { min-height: 380px; }
+    .flow-outcomes { gap: 6px; margin-left: 22px; }
+    .flow-result { padding: 9px; }
+    .flow-result strong { font-size: .62rem; }
+    .human-chip { padding: 7px 6px; font-size: .5rem; }
+}
