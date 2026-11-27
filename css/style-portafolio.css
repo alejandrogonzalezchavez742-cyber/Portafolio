@@ -921,3 +921,19 @@ main {
     .contact-actions { align-items: flex-start; flex-direction: column; }
     .contact-form { width: 100%; padding: 20px; }
 }
+
+/* Datos de contacto visibles junto al formulario */
+.hero-email { color: var(--home-paper); font-weight: 700; text-decoration: underline; text-decoration-color: rgba(212, 243, 106, .6); text-underline-offset: 3px; }
+.hero-email:hover { color: var(--home-acid); }
+.contact-methods { position: relative; z-index: 1; grid-column: 1; grid-row: 2; display: grid; width: min(100%, 500px); gap: 11px; }
+.contact-method { display: grid; gap: 7px; padding: 14px 16px; border: 1px solid rgba(20, 23, 17, .24); background: rgba(20, 23, 17, .045); color: var(--home-ink); transition: background 160ms ease, border-color 160ms ease; }
+a.contact-method:hover { border-color: rgba(20, 23, 17, .55); background: rgba(20, 23, 17, .08); }
+.contact-method-label { color: #4d5832; font-size: .55rem; font-weight: 700; letter-spacing: .12em; }
+.contact-method strong, .contact-number { color: var(--home-ink); font-size: clamp(.9rem, 1.2vw, 1.1rem); font-weight: 700; letter-spacing: -.025em; }
+.contact-number:hover { text-decoration: underline; text-underline-offset: 3px; }
+.contact-method-action { display: inline-flex; align-items: center; gap: 9px; color: #4c5930; font-size: .64rem; font-weight: 700; }
+.contact-method-action span { color: #141711; }
+@media (max-width: 700px) {
+    .contact-methods { grid-column: 1; grid-row: auto; width: 100%; }
+    .contact-method { padding: 13px 14px; }
+}
